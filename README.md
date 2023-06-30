@@ -1,5 +1,5 @@
-Архетип для создания простого Java проекта и тестирования с использованием JUnit5  
-Cтруктура проекта:  
+Проект для установки архетипа для создания простого Java проекта с тестами на JUnit5  
+Cтруктура создаваемого проекта:  
 ```
 src
 └───main
@@ -9,7 +9,7 @@ src
     └───resources
 ```
 
-pom.xml:  
+pom.xml создаваемого проекта:  
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -83,4 +83,14 @@ pom.xml:
   </build>
 
 </project>
+```
+
+Установка архетипа:
+```
+mvn clean install
+```
+
+Использование архетипа:
+```
+mvn archetype:generate -DarchetypeGroupId=ru.ddc.archetypes -DarchetypeArtifactId=basic-archetype -DarchetypeVersion=1.1
 ```
